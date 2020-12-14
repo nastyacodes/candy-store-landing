@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.container {
+    margin: 0 23px;
+}
+
+.header__logo {
+    display: block;
+    margin-top: 7px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header__img {
+    height: 31px;
+    width: 31px;
+}
+
+.header__name {
+    font-size: 5px;
+    font-weight: 300;
+    line-height: 5.86px;
+    color: #000;
+}
+
+.menu__btn {
+    position: absolute;
+    top: 22px;
+    right: 23px;
+}
+
+.menu__btn > span {
+    display: flex;
+    position: relative;
+    width: 17px;
+    height: 0;
+    margin-bottom: 5px;
+    border: .6px solid #000;
+    border-radius: 3px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+.menu__btn > input:checked .menu__btn-toggle > span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #36383F;
+}
+.menu__btn > input:checked > span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu__btn > input:checked > span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu__list {
+    list-style: none;
+    
+}
+
+.menu__list-link {
+    text-decoration: none;
+    color: #000;
+   
+}
+
+.menu__line {
+    display: none;
+}
