@@ -13,6 +13,13 @@ body {
     margin: 0 23px;
 }
 
+.header {
+    height: 50px;
+    width: auto;
+    background-color: #fff;
+    z-index: 1;
+}
+
 .header__logo {
     display: block;
     margin-top: 7px;
@@ -46,31 +53,32 @@ body {
     margin-bottom: 5px;
     border: .6px solid #000;
     border-radius: 3px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+    transition: .3s;
 }
 
-.menu__btn > input:checked .menu__btn-toggle > span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-3px, -1px);
-  background: #36383F;
-}
-.menu__btn > input:checked > span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+span.active {
+    width: 20px;
+    transform: rotate(45deg) translate(-4px, -5px);
 }
 
-.menu__btn > input:checked > span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
+span:nth-last-child(3).active {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+span:nth-last-child(2).active {
+    transform: rotate(-45deg) translate(0, 0);
 }
 
 .menu__list {
     list-style: none;
-    
+    text-align: right;
+    background-color: red;
+}
+
+.menu__list-item {
+    padding: 15px 10px;
+    font-size: 1.4rem;
 }
 
 .menu__list-link {
