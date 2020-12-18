@@ -329,6 +329,7 @@ span:nth-last-child(2).active {
 }
 
 .order__inner {
+    gap: 25px;
     padding: 49px 45px 57px;
     background-color: rgba(232, 232, 232, 0.5);
 }
@@ -338,18 +339,39 @@ span:nth-last-child(2).active {
 }
 
 .order__items {
+    display: grid;
+    grid-template-rows: repeat(1fr, 3);
+    gap: 25px;
     margin-top: 29px;
 }
 
 .order__item {
+    padding: 28px 34px;
     background-color: rgba(255, 255, 255, 0.85);;
 }
 
 .order__item-img {
     width: 61px;
     height: 61px;
+    margin-bottom: 30px;
+}
+
+.order__item-title {
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #B40827;
 }
 
 .order__item-text {
     text-align: left;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.order__item-link {
+    color: #000;
+    cursor: pointer;
 }
