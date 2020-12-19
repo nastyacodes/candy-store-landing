@@ -21,6 +21,7 @@ body {
     background-color: #B40827;
     font-size: 12px;
     line-height: 14px;
+    text-transform: uppercase;
     outline: none;
     transition: .3s;
 }
@@ -29,13 +30,14 @@ body {
     width: 60px;
     height: 1.5px;
     margin: 0 auto;
-    background-color: #B40827;
     border: none;
+    background-color: #B40827;
 }
 
 .title {
     height: 34px;
     text-align: center;
+    text-transform: uppercase;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -81,6 +83,7 @@ body {
 .header__name {
     font-size: 5px;
     font-weight: 300;
+    text-transform: uppercase;
     line-height: 5.86px;
     color: #000;
 }
@@ -139,8 +142,8 @@ span:nth-last-child(2).active {
 
 .menu__list-link {
     text-decoration: none;
-    color: #000;
-   
+    text-transform: uppercase;
+    color: #000;  
 }
 
 .menu__line {
@@ -158,10 +161,11 @@ span:nth-last-child(2).active {
 }
 
 .top__name {
+    margin: 15px auto 30px;
     font-weight: 300;
     font-size: 40px;
     line-height: 46px;
-    margin: 15px auto 30px;
+    text-transform: uppercase;
 }
 
 .top__line {
@@ -179,6 +183,7 @@ span:nth-last-child(2).active {
     font-weight: 200;
     font-size: 15px;
     line-height: 18px;
+    text-transform: uppercase;
 }
 
 .top__text-bold {
@@ -314,6 +319,7 @@ span:nth-last-child(2).active {
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
+    text-transform: uppercase;
     color: #B40827;
 }
 
@@ -321,6 +327,7 @@ span:nth-last-child(2).active {
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
+    text-transform: lowercase;
 }
 
 .order {
@@ -361,6 +368,7 @@ span:nth-last-child(2).active {
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
+    text-transform: uppercase;
     color: #B40827;
 }
 
