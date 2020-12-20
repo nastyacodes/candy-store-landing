@@ -24,6 +24,7 @@ body {
     text-transform: uppercase;
     outline: none;
     transition: .3s;
+    cursor: pointer;
 }
 
 .line {
@@ -382,4 +383,103 @@ span:nth-last-child(2).active {
 .order__item-link {
     color: #000;
     cursor: pointer;
+}
+
+.contacts {
+    margin-top: 74px;
+    text-align: center;
+}
+
+.contacts__title {
+    margin-bottom: 4px;
+}
+
+.contacts__info {
+    margin-top: 23px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.contacts__info-div {
+    font-weight: 600;
+}
+
+.contacts__mailing {
+    margin-top: 25px;
+}
+
+.contacts__mailing-title {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.contacts__mailing-text {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.contacts__mailing-input {
+    display: block;
+    width: 270px;
+    height: 40px;
+    margin: 0 auto 17px;
+    padding: 12px 15px;
+    color: #CDCDCD;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    border: 1px solid #CDCDCD;
+    transition: .3s;
+}
+
+.contacts__mailing-input:focus {
+    border: 2px solid #B40827;
+    outline: none;
+    transition: .3s;
+}
+
+.contacts__mailing-btn {
+    padding: 12px 30px;
+    margin-bottom: 29px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.contacts__image {
+    height: 330px;
+    width: auto;
+    margin: -79px auto;
+    transform: rotate(90deg);
+}
+
+.contacts__socials {
+    display: flex;
+    width: inherit;
+}
+
+.contacts__socials-icon {
+    width: 20%;
+    height: 65px;
+    background-color: #B40827;
+}
+
+.contacts__socials-img {
+    margin: auto;
+}
+
+.contacts__socials-img:not(.contacts__socials-img:last-of-type) {
+    width: 26px;
+    height: auto;
+}
+
+.contacts__socials-img:last-of-type {
+    height: 26px;
+    width: auto;
 }
