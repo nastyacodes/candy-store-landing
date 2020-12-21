@@ -95,6 +95,10 @@ body {
     right: 23px;
 }
 
+.menu__btn:hover {
+    cursor: pointer;
+}
+
 .menu__btn > span {
     display: flex;
     position: relative;
@@ -385,45 +389,52 @@ span:nth-last-child(2).active {
     cursor: pointer;
 }
 
-.contacts {
+.order__item-link:hover,
+.order__item-link:active {
+    text-decoration: none;
+    color: #B40827;
+    font-weight: 600;
+}
+
+.footer {
     margin-top: 74px;
     text-align: center;
 }
 
-.contacts__title {
+.footer__title {
     margin-bottom: 4px;
 }
 
-.contacts__info {
+.footer__contacts {
     margin-top: 23px;
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
 }
 
-.contacts__info-div {
+.footer__contacts-info {
     font-weight: 600;
 }
 
-.contacts__mailing {
+.footer__mailing {
     margin-top: 25px;
 }
 
-.contacts__mailing-title {
+.footer__mailing-title {
     margin-bottom: 12px;
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
 }
 
-.contacts__mailing-text {
+.footer__mailing-text {
     margin-bottom: 10px;
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
 }
 
-.contacts__mailing-input {
+.footer__mailing-input {
     display: block;
     width: 270px;
     height: 40px;
@@ -438,13 +449,13 @@ span:nth-last-child(2).active {
     transition: .3s;
 }
 
-.contacts__mailing-input:focus {
+.footer__mailing-input:focus {
     border: 2px solid #B40827;
     outline: none;
     transition: .3s;
 }
 
-.contacts__mailing-btn {
+.footer__mailing-btn {
     padding: 12px 30px;
     margin-bottom: 29px;
     font-weight: 400;
@@ -452,34 +463,101 @@ span:nth-last-child(2).active {
     line-height: 18px;
 }
 
-.contacts__image {
+.footer__image {
     height: 330px;
     width: auto;
     margin: -79px auto;
     transform: rotate(90deg);
 }
 
-.contacts__socials {
+.footer__socials {
     display: flex;
     width: inherit;
+    margin: 22px 0 18px;
 }
 
-.contacts__socials-icon {
+.footer__socials-icon {
+    display: flex;
+    position: relative;
     width: 20%;
     height: 65px;
     background-color: #B40827;
+    transition: .3s;
 }
 
-.contacts__socials-img {
+.footer__socials-icon:not(.footer__socials-img:last-of-type)::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    height: 80%;
+    width: 1.5px;
+    background-color:rgba(255, 255, 255, 0.19);
+}
+
+.footer__socials-img {
     margin: auto;
 }
 
-.contacts__socials-img:not(.contacts__socials-img:last-of-type) {
+.footer__socials-img:not(.footer__socials-img:last-of-type) {
     width: 26px;
     height: auto;
 }
 
-.contacts__socials-img:last-of-type {
+.footer__socials-img:last-of-type {
     height: 26px;
     width: auto;
+}
+
+.footer__socials-icon.active {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.footer__socials-img.active {
+    filter: invert(23%) sepia(61%) saturate(7238%) hue-rotate(325deg) brightness(63%) contrast(160%);
+}
+
+.footer__map {
+    position: relative;
+    height: 330px;
+    background: url('/images/footer/map.jpg') no-repeat center/cover;
+    margin-bottom: 14px;
+}
+
+.footer__map-address {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    width: 120px;
+    padding: 8px 7px;
+    font-size: 10px;
+    line-height: 12px;
+    color: #fff;
+    background-color: #B40827;
+}
+
+.footer__map-address--title {
+    margin-bottom: 12px;
+    font-weight: 600;
+} 
+
+.footer__map-address--text {
+    font-weight: 300;
+}
+
+.footer__politics {
+    display: block;
+    margin-bottom: 11px;
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000;
+}
+
+.footer__politics:hover,
+.footer__politics:active {
+    cursor: pointer;
+    color: #B40827;
+    text-decoration: none;
 }
