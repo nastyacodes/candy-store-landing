@@ -2,14 +2,23 @@
 const toggleBtn = document.querySelector('.menu__btn')
 const spans = document.querySelectorAll('.menu__btn span')
 const menuList = document.querySelector('.menu__list')
+const menuItems = document.querySelectorAll('.menu__list-item')
 
-toggleBtn.addEventListener('click', () => {
+toggleBtn.addEventListener('click', toggleMenu)
+
+menuItems.forEach(menuItem => {
+    menuItem.addEventListener('click', toggleMenu)
+})
+
+// opening and closing menu in mobile version
+function toggleMenu() {
     for (let i = 0; i < spans.length; i ++) {
         spans[i].classList.toggle('active')
     }
 
     menuList.classList.toggle('active');
-})
+    document.body.classList.toggle('lock')
+}
 
 //Activate social media icons on hover and click
 const icons = document.querySelectorAll('.footer__socials-icon')
