@@ -144,7 +144,9 @@ span:nth-last-child(2).active {
 
 .menu__list.active {
     display: block;
+    height: 100vh;
     transform: translate(0%);
+    overflow-y: hidden;
 }
 
 .menu__list-item {
@@ -321,12 +323,16 @@ span:nth-last-child(2).active {
     width: 270px;
     border: 1px solid #000;
     margin: 0 auto;
+    padding: 0;
     text-align: center;
 }
 
 .assortment__item-img {
-    width: 270px;
+    display: inline-block;
+    width: 100%;
     height: 180px;
+    margin: 0;
+    padding: 0;
     object-fit: cover;
     object-position: 50% 100%;
 }
