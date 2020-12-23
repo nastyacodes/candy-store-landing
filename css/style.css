@@ -150,7 +150,6 @@ span:nth-last-child(2).active {
     display: block;
     height: 100vh;
     transform: translate(0%);
-    overflow-y: hidden;
 }
 
 .menu__list-item {
@@ -222,16 +221,20 @@ span:nth-last-child(2).active {
     align-items: left;
 }
 
-.reasons__inner {
-    background-color: rgba(232, 232, 232, 0.5);
-    padding: 39px 23px 52px 25px;
-}
-
 /* ------------------------ */
 
 
 
 /* --- classes for reasons section --- */
+
+.reasons {
+    margin-bottom: 41px;
+}
+
+.reasons__inner {
+    background-color: rgba(232, 232, 232, 0.5);
+    padding: 39px 23px 52px 25px;
+}
 
 .reasons__title {
     margin-bottom: 16px;
@@ -277,7 +280,8 @@ span:nth-last-child(2).active {
 /* --- classes for fillings section --- */
 
 .fillings {
-    margin: 41px 0 76px;
+    padding-top: 60px;
+    margin: -60px 0 76px;
 }
 
 .fillings__item {
@@ -311,6 +315,11 @@ span:nth-last-child(2).active {
 
 
 /* --- classes fot assortment section --- */
+
+.assortment {
+    padding-top: 60px;
+    margin: -60px 0 54px;
+}
 
 .assortment__title {
     margin-bottom: 11px;
@@ -383,7 +392,8 @@ span:nth-last-child(2).active {
 /* --- classes for order and delivery section --- */
 
 .order {
-    margin-top: 54px;
+    padding-top: 60px;
+    margin: -60px 0 74px;
     text-align: center;
 }
 
@@ -450,7 +460,8 @@ span:nth-last-child(2).active {
 /* --- classes for footer and delivery section --- */
 
 .footer {
-    margin-top: 74px;
+    padding-top: 60px;
+    margin-top: -60px;
     text-align: center;
 }
 
