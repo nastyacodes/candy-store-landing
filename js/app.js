@@ -54,3 +54,20 @@ function makeIconInActive(e) {
         div.classList.remove('active')
     }
 }
+
+//Change color of navigation bar on scrolling
+const header = document.querySelector(".header");
+
+window.addEventListener('scroll', () => {
+    // "use strict";
+    if (document.body.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
+        header.classList.add("scroll");
+      } else {
+        header.classList.remove("scroll");
+      }
+})
+
+// .onscroll = function() {
+//   "use strict";
+  
+// };
