@@ -57,17 +57,26 @@ function makeIconInActive(e) {
 
 //Change color of navigation bar on scrolling
 const header = document.querySelector(".header");
+const headerImg = header.querySelector('.header__img');
+const headerName = header.querySelector('.header__name');
+
+let headerElements = [header, headerImg, headerName, spans[0], spans[1], spans[2]];
 
 window.addEventListener('scroll', () => {
     // "use strict";
-    if (document.body.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
-        header.classList.add("scroll");
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
+        toggleScrollClass(headerElements, 'add');
       } else {
-        header.classList.remove("scroll");
+        toggleScrollClass(headerElements, 'remove');
       }
-})
+});
 
-// .onscroll = function() {
-//   "use strict";
-  
-// };
+function toggleScrollClass(arrayOfElements, action) {
+    console.log(arrayOfElements);
+    for (let i = 0; i < arrayOfElements.length; i++) {
+        if (action === 'add')
+            arrayOfElements[i].classList.add('scroll');
+        else
+            arrayOfElements[i].classList.remove('scroll');
+    }
+}

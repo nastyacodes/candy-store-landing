@@ -77,20 +77,21 @@ body.lock{
     height: 50px;
     width: 100vw;
     background-color: #fff;
+    text-align: center;
     z-index: 2;
     transition: all .5s ease-in-out;
 }
 
-.scroll {
+.header.scroll {
     background-color: #B40827;
     padding-bottom: 10px;
 }
 
 .header__logo {
-    display: block;
+    display: inline-block;
     margin-top: 7px;
     text-decoration: none;
-    text-align: center;
+    
 }
 
 .header__img {
@@ -104,6 +105,15 @@ body.lock{
     text-transform: uppercase;
     line-height: 5.86px;
     color: #000;
+}
+
+.header__img.scroll {
+    filter: invert(1);
+    color: #fff;
+}
+
+.header__name.scroll {
+    color: #fff;
 }
 
 .menu__btn {
@@ -133,6 +143,11 @@ span.active {
     transform: rotate(45deg) translate(-4px, -5px);
 }
 
+.menu__btn > span.scroll {
+    background-color: #fff;
+    border: .6px solid #fff;
+}
+
 span:nth-last-child(3).active {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
@@ -143,18 +158,18 @@ span:nth-last-child(2).active {
 }
 
 .menu__list {
-    display: none;
     height: calc(100vh - 50px);
+    width: 100%;
     list-style: none;
     text-align: right;
     background-color: #fff;
-    transform: translate(100%);
+    transform: translate(150%);
     z-index: 1;
     transition: .3s;
 }
 
 .menu__list.active {
-    display: block;
+    /* display: block; */
     height: 100vh;
     transform: translate(0%);
 }
@@ -204,7 +219,6 @@ span:nth-last-child(2).active {
     margin: 0 auto;
     border: none;
     background-color: #000;
-    
 }
 
 .top__text {
