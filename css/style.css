@@ -158,20 +158,19 @@ span:nth-last-child(2).active {
 }
 
 .menu__list {
+    display: none;
     height: calc(100vh - 50px);
     width: 100%;
     list-style: none;
     text-align: right;
     background-color: #fff;
-    transform: translate(150%);
     z-index: 1;
     transition: .3s;
 }
 
 .menu__list.active {
-    /* display: block; */
+    display: block;
     height: 100vh;
-    transform: translate(0%);
 }
 
 .menu__list-item {
