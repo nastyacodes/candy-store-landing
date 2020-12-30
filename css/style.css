@@ -605,7 +605,7 @@ span:nth-last-child(2).active {
 .footer__map {
     position: relative;
     height: 330px;
-    background: url('images/footer/map.jpg') no-repeat center/cover;
+    background: url('../images/footer/map.jpg') no-repeat center/cover;
     margin-bottom: 14px;
 }
 
