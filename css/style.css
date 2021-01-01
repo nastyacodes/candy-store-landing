@@ -470,7 +470,6 @@ span:nth-last-child(2).active {
 .order__item-link:active {
     text-decoration: none;
     color: #B40827;
-    font-weight: 600;
 }
 
 /* ----------------------------------------------- */
