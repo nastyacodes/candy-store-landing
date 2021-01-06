@@ -1,3 +1,4 @@
-Сайт-лендинг для кондитерской. 
-По дизайну (ссылка на дизайнера)
-Посмотреть вживую: 
+##[Сайт-лендинг для кондитерской](https://nastyacodes.github.io/candy-store-landing/)
+
+
+Посмотреть вживую: https://nastyacodes.github.io/candy-store-landing/
