@@ -20,7 +20,7 @@ function toggleMenu() {
     document.body.classList.toggle('lock')
 }
 
-//Activate social media icons on hover and click
+//Activate social media icons on hover and on click
 const icons = document.querySelectorAll('.footer__socials-icon')
 
 for(let i = 0; i < icons.length; i++) {
