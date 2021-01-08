@@ -72,7 +72,6 @@ window.addEventListener('scroll', () => {
 });
 
 function toggleScrollClass(arrayOfElements, action) {
-    console.log(arrayOfElements);
     for (let i = 0; i < arrayOfElements.length; i++) {
         if (action === 'add')
             arrayOfElements[i].classList.add('scroll');

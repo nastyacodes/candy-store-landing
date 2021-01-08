@@ -1,4 +1,4 @@
-## [Сайт-лендинг для кондитерской](https://nastyacodes.github.io/candy-store-landing/)
+# [Сайт-лендинг для кондитерской](https://nastyacodes.github.io/candy-store-landing/)
 
 
 Выполнена кроссбаузерная адаптивная mobile-first вёрстка всех блоков, добавлена анимация для кнопок, иконок соцсетей и header-а.
