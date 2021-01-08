@@ -256,7 +256,10 @@
                 <input class="footer__mailing-input" type="email" validate>
                 <button class="footer__mailing-btn btn" type="submit">Подписаться</button>
             </div>
-            <img class="footer__image" src="images/footer/cakes.jpg" alt="Изображение десертов">
+            <picture>
+                <source srcset="images/footer/cakes.jpg" media="(min-width: 500px)">
+                <img class="footer__image" src="images/footer/cakes-mobile.jpg" alt="Изображение десертов">
+            </picture>
             <div class="footer__socials">
                 <a class="footer__socials-icon" href="#" target="_blank">
                     <img class="footer__socials-img" src="images/social-media/instagram.svg" alt="Instagram">

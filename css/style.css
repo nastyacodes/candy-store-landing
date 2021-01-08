@@ -547,10 +547,8 @@ span:nth-last-child(2).active {
 }
 
 .footer__image {
-    height: 330px;
-    width: auto;
-    margin: -79px auto;
-    transform: rotate(90deg);
+    width: 100%;
+    height: auto;
 }
 
 .footer__socials {
@@ -603,9 +601,10 @@ span:nth-last-child(2).active {
 
 .footer__map {
     position: relative;
+    max-width: 380px;
     height: 330px;
     background: url('../images/footer/map.jpg') no-repeat center/cover;
-    margin-bottom: 14px;
+    margin:0 auto 14px;
 }
 
 .footer__map-address {
